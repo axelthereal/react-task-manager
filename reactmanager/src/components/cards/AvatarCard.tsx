@@ -13,7 +13,7 @@ const AvatarCard = ({ title }: AvatarCardProps) => {
     "#7f017f",
     "#fea500",
     "#fc5200",
-    "#ffefe7",
+    "#9b51e0",
     "#ff3b30",
     "#ea4c89",
   ];

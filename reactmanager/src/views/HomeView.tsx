@@ -40,6 +40,9 @@ const HomeView = () => {
 
           <TaskList tasks={testTasks} />
         </div>
+        <div className="footer container px-3 py-4">
+            
+        </div>
       </AppCard>
     </>
   );
