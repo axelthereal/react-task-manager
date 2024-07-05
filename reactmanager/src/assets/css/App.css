@@ -23,8 +23,16 @@ a {
   opacity: 75%;
 }
 .btn-add-task {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50% !important;
+  position: fixed !important;
+  right: 20px;
+  bottom: 25px;
+}
+.return-btn {
+  width: 55px;
+  height: 55px;
   border-radius: 50% !important;
   position: fixed !important;
   right: 20px;

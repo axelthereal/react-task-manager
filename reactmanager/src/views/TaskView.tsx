@@ -1,6 +1,6 @@
-import AddTaskBtn from "../components/buttons/AddTaskBtn";
 import { Task, TaskState } from "../data/TasksTypes";
 import UrgentBtn from "../components/buttons/UrgentBtn";
+import ReturnBtn from "../components/buttons/ReturnBtn";
 
 const TaskView = () => {
   const task: Task = {
@@ -25,10 +25,10 @@ const TaskView = () => {
 
           <div className="d-flex align-items-center justify-content-between gap-3">
             <button className="btn btn-primary rounded-pill bg-primary-subtle  fw-semibold text-primary-emphasis border border-1 border-primary">
-              <span className="bi-pen"></span> Edit...
+              <span className="bi-pen"></span> Edit Task
             </button>
             <button className="btn btn-danger rounded-pill bg-white text-danger fw-semibold border border-1 border-danger">
-              <span className="bi-trash"></span> Delete Task
+              <span className="bi-trash"></span> Delete
             </button>
           </div>
         </div>
@@ -45,10 +45,10 @@ const TaskView = () => {
 
         <button className="btn btn-success border-0 rounded-pill d-flex align-items-center gap-2">
           <span className="bi-check2-all fs-5"></span>
-          Mark Task as done
+          Mark as done
         </button>
       </div>
-      <AddTaskBtn />
+      <ReturnBtn />
     </>
   );
 };

@@ -19,7 +19,7 @@ const AvatarCard = ({ title }: AvatarCardProps) => {
   ];
   const index = Math.floor(Math.random() * 10);
   const cardStyle: {} = {
-    "background-color": avatars[index],
+    backgroundColor: avatars[index],
   };
   return (
     <>
