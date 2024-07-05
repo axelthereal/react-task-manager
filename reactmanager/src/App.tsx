@@ -5,8 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomeView from "./views/HomeView";
-import TaskView from "./views/TaskView";
 import MainLayout from "./Layouts/MainLayout";
+import TaskView from "./views/TaskView";
+import AddTaskView from "./views/AddTaskView";
+import EditTaskView from "./views/EditTaskView";
 
 import "./assets/css/App.css";
 import "./assets/bootstrap-icons/bootstrap-icons.css";
@@ -17,6 +19,8 @@ function App() {
       <Route path="/" element={<MainLayout />}>
         <Route path="/home" element={<HomeView />} />
         <Route path="/task/:id" element={<TaskView />} />
+        <Route path="/add-task" element={<AddTaskView />} />
+        <Route path="/edit-task/:id" element={<EditTaskView />} />
       </Route>
     )
   );

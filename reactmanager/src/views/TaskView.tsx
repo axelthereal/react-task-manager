@@ -1,6 +1,7 @@
-import { Task, TaskState } from "../data/TasksTypes";
+import { Task } from "../data/TasksTypes";
 import UrgentBtn from "../components/buttons/UrgentBtn";
 import ReturnBtn from "../components/buttons/ReturnBtn";
+import { Link } from "react-router-dom";
 
 const TaskView = () => {
   const task: Task = {
@@ -8,7 +9,7 @@ const TaskView = () => {
     title: "Turn off cooker when food is ready",
     description:
       "Turn off the gas cooker when the diner is ready, don't forget to clean around to avoid dirts and bad odours",
-    state: TaskState.Pending,
+    state: "Pending",
     urgent: true,
   };
 
@@ -24,9 +25,11 @@ const TaskView = () => {
           {task.urgent && <UrgentBtn />}
 
           <div className="d-flex align-items-center justify-content-between gap-3">
-            <button className="btn btn-primary rounded-pill bg-primary-subtle  fw-semibold text-primary-emphasis border border-1 border-primary">
-              <span className="bi-pen"></span> Edit Task
-            </button>
+            <Link to={`/edit-task/2`}>
+              <button className="btn btn-primary rounded-pill bg-primary-subtle  fw-semibold text-primary-emphasis border border-1 border-primary">
+                <span className="bi-pen"></span> Edit Task
+              </button>
+            </Link>
             <button className="btn btn-danger rounded-pill bg-white text-danger fw-semibold border border-1 border-danger">
               <span className="bi-trash"></span> Delete
             </button>
