@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import CancelBtn from "../buttons/CancelBtn";
+
 const Navbar = () => {
   return (
     <>
@@ -8,6 +10,8 @@ const Navbar = () => {
             <Link className="navbar-brand logo fs-3 fw-semibold" to="/home">
               React Manager
             </Link>
+
+            <CancelBtn />
           </div>
         </nav>
       </header>

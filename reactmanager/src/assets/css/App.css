@@ -9,6 +9,16 @@ a {
 .cursor-p {
   cursor: pointer;
 }
+.cancel-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+}
+
+.cancel-btn:hover {
+  background-color: #f4f5f8 !important;
+}
+
 .min-opacity {
   opacity: 75%;
 }
