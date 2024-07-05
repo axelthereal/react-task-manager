@@ -6,7 +6,7 @@ const AvatarCard = ({ title }: AvatarCardProps) => {
   const avatarLogo = title.slice(0, 1);
   const avatars = [
     "#0052ff",
-    "#ffe804",
+    "#fed328",
     "#784ffe",
     "#181c1f",
     "#4bca7e",
@@ -15,7 +15,7 @@ const AvatarCard = ({ title }: AvatarCardProps) => {
     "#fc5200",
     "#ffefe7",
     "#ff3b30",
-    "#fdf5d3",
+    "#ea4c89",
   ];
   const index = Math.floor(Math.random() * 10);
   const cardStyle: {} = {

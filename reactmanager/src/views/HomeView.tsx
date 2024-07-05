@@ -37,6 +37,7 @@ const HomeView = () => {
         <SearchForm />
         <div className="body container px-3 py-4">
           <h5 className="opacity-80 fw-semibold">Tasks added recently</h5>
+
           <TaskList tasks={testTasks} />
         </div>
       </AppCard>
