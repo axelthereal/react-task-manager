@@ -1,6 +1,6 @@
 import { Task } from "../../data/TasksTypes";
 import AvatarCard from "../cards/AvatarCard";
-
+import UrgentBtn from "../buttons/UrgentBtn";
 interface TaskProps {
   task: Task;
 }
@@ -20,7 +20,8 @@ const TaskItem = ({ task }: TaskProps) => {
             <h6 className="mb-0">{task.title}</h6>
             <p className="mb-0 opacity-75">{description}...</p>
           </div>
-          <small className="opacity-50 text-nowrap">now</small>
+
+          {task.urgent && <UrgentBtn />}
         </div>
       </div>
     </>

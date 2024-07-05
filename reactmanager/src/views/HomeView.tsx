@@ -1,5 +1,3 @@
-import AppCard from "../components/cards/AppCard";
-import Navbar from "../components/headers/Navbar";
 import SearchForm from "../components/forms/SearchForm";
 import TaskList from "../components/lists/TasksList";
 import { Task, TaskState } from "../data/TasksTypes";
@@ -34,26 +32,23 @@ const HomeView = () => {
   ];
   return (
     <>
-      <AppCard>
-        <Navbar />
-        <SearchForm />
-        <FilterNavbar />
-        <div className="body container px-4 pb-4 pt-0 mt-0">
-          <TaskList tasks={testTasks} />
-        </div>
-        <span className="line border-top d-block mx-4"></span>
-        <div className="footer container px-4 pt-3 py-4">
-          <span className="fw-normal  d-flex align-items-top gap-2">
-            <span className="bi-people fs-3"></span>
-            <span className="min-opacity">
-              Recent task are listed here,
-              <span className="fw-semibold opacity-100"> click </span>
-              on a task to view, <br />
-              edit or delete.
-            </span>
+      <SearchForm />
+      <FilterNavbar />
+      <div className="body container px-4 pb-4 pt-0 mt-0">
+        <TaskList tasks={testTasks} />
+      </div>
+      <span className="line border-top d-block mx-4"></span>
+      <div className="footer container px-4 pt-3 py-4">
+        <span className="fw-normal  d-flex align-items-top gap-2">
+          <span className="bi-people fs-3"></span>
+          <span className="min-opacity">
+            Recent task are listed here,
+            <span className="fw-semibold opacity-100"> click </span>
+            on a task to view, <br />
+            edit or delete.
           </span>
-        </div>
-      </AppCard>
+        </span>
+      </div>
       <AddTaskBtn />
     </>
   );

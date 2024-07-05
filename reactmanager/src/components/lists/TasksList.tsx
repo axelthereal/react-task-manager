@@ -11,7 +11,9 @@ const TasksList = ({ tasks }: TasksListProps) => {
     <>
       <div className="list-group gap-3 mt-3">
         {tasks.map((task) => (
-          <TaskItem task={task} key={task.id} />
+          <Link to={`/task/${task.id}`}>
+            <TaskItem task={task} key={task.id} />
+          </Link>
         ))}
       </div>
     </>
