@@ -8,8 +8,8 @@ const HomeView = () => {
       <AppCard>
         <Navbar />
         <SearchForm />
-        <div className="body container px-3">
-          <h1>Home</h1>
+        <div className="body container px-3 py-4">
+          <h5 className="opacity-80 fw-semibold">Tasks added recently</h5>
         </div>
       </AppCard>
     </>

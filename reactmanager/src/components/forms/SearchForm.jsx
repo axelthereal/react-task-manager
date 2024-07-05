@@ -8,8 +8,8 @@ const SearchForm = () => {
           </button>
           <input
             type="search"
-            name=""
-            id=""
+            name="searchForm"
+            id="SearchForm"
             placeholder="Search..."
             className="form-control fw-semibold lead bg-transparent shadow-none border-0"
           />
