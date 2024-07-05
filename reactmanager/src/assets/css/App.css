@@ -32,8 +32,13 @@ body {
   color: initial;
 }
 .nav .task-nav a:hover:not(.active) {
+  opacity: 100% !important;
   background-color: #f6f6f6 !important;
 }
+.nav .task-nav a:not(.active) {
+  opacity: 70% !important;
+}
+
 .nav .task-nav a.active {
   color: blue;
   background-color: #fff;

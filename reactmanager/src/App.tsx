@@ -1,11 +1,11 @@
 import "./assets/css/App.css";
 import "./assets/bootstrap-icons/bootstrap-icons.css";
-import HomeView from "./views/HomeView";
+import TaskView from "./views/TaskView";
 
 function App() {
   return (
     <>
-      <HomeView />
+      <TaskView />
     </>
   );
 }

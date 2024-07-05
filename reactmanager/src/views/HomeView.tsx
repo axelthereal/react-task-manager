@@ -4,6 +4,7 @@ import SearchForm from "../components/forms/SearchForm";
 import TaskList from "../components/lists/TasksList";
 import { Task, TaskState } from "../data/TasksTypes";
 import AddTaskBtn from "../components/buttons/AddTaskBtn";
+import FilterNavbar from "../components/headers/FilterNavbar";
 
 const HomeView = () => {
   const testTasks: Task[] = [
@@ -36,35 +37,8 @@ const HomeView = () => {
       <AppCard>
         <Navbar />
         <SearchForm />
-        <div className="body container px-4 py-4">
-          <h5 className="opacity-80 fw-semibold">Tasks added recently</h5>
-          <ul className="nav d-flex gap-3 mt-2 mb-4">
-            <li className="nav-item d-block fw-semibold task-nav">
-              <a
-                className="nav-link py-1 px-3 active"
-                aria-current="page"
-                href="#"
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav-item d-block fw-semibold task-nav">
-              <a className="nav-link py-1 px-3" href="#">
-                All
-              </a>
-            </li>
-            <li className="nav-item d-block fw-semibold task-nav">
-              <a className="nav-link py-1 px-3" href="#">
-                Pending
-              </a>
-            </li>
-            <li className="nav-item d-block fw-semibold task-nav">
-              <a className="nav-link py-1 px-3" href="#">
-                Done
-              </a>
-            </li>
-          </ul>
-
+        <FilterNavbar />
+        <div className="body container px-4 pb-4 pt-0 mt-0">
           <TaskList tasks={testTasks} />
         </div>
         <span className="line border-top d-block mx-4"></span>

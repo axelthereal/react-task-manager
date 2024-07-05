@@ -17,11 +17,13 @@ const TaskView = () => {
     <>
       <AppCard>
         <Navbar />
-        <div className="body container px-3 py-4">
+        <div className="body container px-4 py-4">
           <h5 className="opacity-80 fw-semibold">{task.title}</h5>
           <p className="fw-medium fs-6 text-muted opacity-75">
             {task.description}
           </p>
+
+          <div className="minfooter"></div>
         </div>
 
         <span className="line border-top d-block mx-3"></span>
