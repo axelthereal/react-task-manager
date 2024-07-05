@@ -36,13 +36,39 @@ const HomeView = () => {
       <AppCard>
         <Navbar />
         <SearchForm />
-        <div className="body container px-3 py-4">
+        <div className="body container px-4 py-4">
           <h5 className="opacity-80 fw-semibold">Tasks added recently</h5>
+          <ul className="nav d-flex gap-3 mt-2 mb-4">
+            <li className="nav-item d-block fw-semibold task-nav">
+              <a
+                className="nav-link py-1 px-3 active"
+                aria-current="page"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li className="nav-item d-block fw-semibold task-nav">
+              <a className="nav-link py-1 px-3" href="#">
+                All
+              </a>
+            </li>
+            <li className="nav-item d-block fw-semibold task-nav">
+              <a className="nav-link py-1 px-3" href="#">
+                Pending
+              </a>
+            </li>
+            <li className="nav-item d-block fw-semibold task-nav">
+              <a className="nav-link py-1 px-3" href="#">
+                Done
+              </a>
+            </li>
+          </ul>
 
           <TaskList tasks={testTasks} />
         </div>
-        <span className="line border-top d-block mx-3"></span>
-        <div className="footer container px-3 pt-3 py-4">
+        <span className="line border-top d-block mx-4"></span>
+        <div className="footer container px-4 pt-3 py-4">
           <span className="fw-normal  d-flex align-items-top gap-2">
             <span className="bi-people fs-3"></span>
             <span className="min-opacity">

@@ -12,7 +12,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50% !important;
-  position: absolute;
+  position: fixed !important;
   right: 20px;
   bottom: 25px;
 }
@@ -25,15 +25,16 @@ body {
   opacity: 80%;
 }
 
-.navbar .task-nav a {
+.nav .task-nav a {
   background-color: #ededed;
   border: 1px solid #dfdfdf;
   border-radius: 10px;
+  color: initial;
 }
-.navbar .task-nav a:hover:not(.active) {
+.nav .task-nav a:hover:not(.active) {
   background-color: #f6f6f6 !important;
 }
-.navbar .task-nav a.active {
+.nav .task-nav a.active {
   color: blue;
   background-color: #fff;
 }
