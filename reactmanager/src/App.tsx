@@ -1,12 +1,11 @@
 import "./assets/css/App.css";
 import "./assets/bootstrap-icons/bootstrap-icons.css";
+import HomeView from "./views/HomeView";
 
 function App() {
   return (
     <>
-      <h1>
-        App <span className="bi bi-house"></span>
-      </h1>
+      <HomeView />
     </>
   );
 }

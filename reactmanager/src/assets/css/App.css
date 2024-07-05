@@ -1,1 +1,25 @@
- 
+body {
+  background-color: #f4f4f5 !important;
+}
+
+.AppCard {
+  overflow: hidden !important;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  opacity: 80%;
+}
+
+.navbar .task-nav a {
+  background-color: #ededed;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+}
+.navbar .task-nav a:hover:not(.active) {
+  background-color: #f6f6f6 !important;
+}
+.navbar .task-nav a.active {
+  color: blue;
+  background-color: #fff;
+}
