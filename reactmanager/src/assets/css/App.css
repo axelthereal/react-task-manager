@@ -5,7 +5,9 @@ body {
 .cursor-p {
   cursor: pointer;
 }
-
+.min-opacity {
+  opacity: 75%;
+}
 .AppCard {
   overflow: hidden !important;
 }

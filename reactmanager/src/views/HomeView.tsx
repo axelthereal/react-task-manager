@@ -40,8 +40,17 @@ const HomeView = () => {
 
           <TaskList tasks={testTasks} />
         </div>
-        <div className="footer container px-3 py-4">
-            
+        <span className="line border-top d-block mx-3"></span>
+        <div className="footer container px-3 pt-3 py-4">
+          <span className="fw-normal  d-flex align-items-top gap-2">
+            <span className="bi-people fs-3"></span>
+            <span className="min-opacity">
+              Recent task are listed here,
+              <span className="fw-semibold opacity-100"> click </span>
+              on a task to view, <br />
+              edit or delete.
+            </span>
+          </span>
         </div>
       </AppCard>
     </>
