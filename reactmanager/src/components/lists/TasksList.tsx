@@ -1,5 +1,6 @@
 import TaskItem from "./TaskItem";
 import { Task } from "../../data/TasksTypes";
+import { Link } from "react-router-dom";
 
 interface TasksListProps {
   tasks: Task[];
@@ -8,9 +9,9 @@ interface TasksListProps {
 const TasksList = ({ tasks }: TasksListProps) => {
   return (
     <>
-      <div className="list-group mt-3">
+      <div className="list-group gap-3 mt-3">
         {tasks.map((task) => (
-          <TaskItem task={task} />
+          <TaskItem task={task} key={task.id} />
         ))}
       </div>
     </>

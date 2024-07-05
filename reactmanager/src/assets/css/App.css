@@ -2,6 +2,9 @@ body {
   background-color: #f4f4f5 !important;
   color: #111112 !important;
 }
+.cursor-p {
+  cursor: pointer;
+}
 
 .AppCard {
   overflow: hidden !important;
@@ -34,4 +37,12 @@ body {
 }
 .searchForm .form-group .btn {
   color: #868c94 !important;
+}
+
+.task-avatar .img {
+  width: 45px !important;
+  height: 45px !important;
+  background-color: blue;
+  border: 1px solid #dcdee0;
+  border-radius: 50% !important;
 }
