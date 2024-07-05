@@ -8,6 +8,14 @@ body {
 .min-opacity {
   opacity: 75%;
 }
+.btn-add-task {
+  width: 60px;
+  height: 60px;
+  border-radius: 50% !important;
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+}
 .AppCard {
   overflow: hidden !important;
 }

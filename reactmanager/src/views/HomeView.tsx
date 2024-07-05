@@ -3,6 +3,7 @@ import Navbar from "../components/headers/Navbar";
 import SearchForm from "../components/forms/SearchForm";
 import TaskList from "../components/lists/TasksList";
 import { Task, TaskState } from "../data/TasksTypes";
+import AddTaskBtn from "../components/buttons/AddTaskBtn";
 
 const HomeView = () => {
   const testTasks: Task[] = [
@@ -53,6 +54,7 @@ const HomeView = () => {
           </span>
         </div>
       </AppCard>
+      <AddTaskBtn />
     </>
   );
 };
