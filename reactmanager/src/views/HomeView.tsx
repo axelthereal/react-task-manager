@@ -7,9 +7,7 @@ const HomeView = () => {
     <>
       <AppCard>
         <Navbar />
-        <div>
-          <SearchForm />
-        </div>
+        <SearchForm />
         <div className="body container px-3">
           <h1>Home</h1>
         </div>

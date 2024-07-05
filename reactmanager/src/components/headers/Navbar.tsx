@@ -4,8 +4,8 @@ const Navbar = () => {
       <header>
         <nav className="navbar navbar-expand-sm navbar-default bg-white">
           <div className="container px-3 pt-3">
-            <a className="navbar-brand logo" href="#">
-              ReactManager
+            <a className="navbar-brand logo fs-5" href="#">
+              React Manager
             </a>
 
             <ul className="navbar-nav gap-2">

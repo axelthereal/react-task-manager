@@ -23,3 +23,14 @@ body {
   color: blue;
   background-color: #fff;
 }
+
+.searchForm .form-group {
+  background-color: #f4f5f8;
+}
+.searchForm .form-group .form-control::placeholder {
+  color: #868c94;
+  font-weight: 600 !important;
+}
+.searchForm .form-group .btn {
+  color: #868c94 !important;
+}
