@@ -23,7 +23,7 @@ const HomeView = () => {
             Recent task are listed here,
             <span className="fw-semibold opacity-100"> click </span>
             on a task to view, <br />
-            edit or delete.
+            edit or delete...
           </span>
         </span>
       </div>

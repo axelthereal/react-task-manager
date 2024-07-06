@@ -21,7 +21,7 @@ function App() {
         <Route path="/task/:id" element={<TaskView />} />
         <Route path="/add-task" element={<AddTaskView />} />
         <Route path="/edit-task/:id" element={<EditTaskView />} />
-      </Route>
+      </Route> 
     )
   );
   return <RouterProvider router={router} />;
