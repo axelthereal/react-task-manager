@@ -17,7 +17,7 @@ const HomeView = () => {
         setTasksList(await res.json());
         setTimeout(() => {
           setLoadingState(false);
-        }, 1000);
+        }, 800);
       })
       .catch((err) => {
         console.log("An Error occured= ", err);
