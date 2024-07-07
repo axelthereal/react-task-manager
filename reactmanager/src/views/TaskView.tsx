@@ -1,17 +1,29 @@
-import { Task } from "../data/TasksTypes";
+import { useParams } from "react-router-dom";
 import UrgentBtn from "../components/buttons/UrgentBtn";
 import ReturnBtn from "../components/buttons/ReturnBtn";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { taskObject } from "../data/TasksTypes";
 
 const TaskView = () => {
-  const task: Task = {
-    id: 2,
-    title: "Turn off cooker when food is ready",
-    description:
-      "Turn off the gas cooker when the diner is ready, don't forget to clean around to avoid dirts and bad odours",
-    state: "Pending",
-    urgent: true,
+  const { id } = useParams();
+  const [task, setTask] = useState(taskObject);
+
+  const getTask = async () => {
+    await fetch(`http://localhost:3030/tasks/${id}`, {
+      method: "GET",
+    })
+      .then(async (res) => {
+        setTask(await res.json());
+      })
+      .catch((err) => {
+        console.log("An Error occured= ", err);
+      });
   };
+
+  useEffect(() => {
+    getTask();
+  }, []);
 
   return (
     <>

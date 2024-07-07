@@ -3,7 +3,15 @@ interface Task {
   title: string;
   description: string;
   state: string;
-  urgent: boolean;
+  urgent: boolean | null;
 }
 
-export { type Task };
+const taskObject: Task = {
+  id: "",
+  title: "",
+  description: "",
+  state: "",
+  urgent: null,
+};
+
+export { type Task, taskObject };

@@ -84,3 +84,28 @@ a {
   border: 1px solid #dcdee0;
   border-radius: 50% !important;
 }
+
+.loader {
+  width: 150px;
+  height: 7px;
+  border-radius: 15px;
+  background-color: #efeeee;
+  overflow: hidden;
+}
+.loader .bar {
+  width: 50px;
+  height: 7px;
+  border-radius: 15px;
+  background-color: #0d6efd;
+  display: block;
+  margin-left: -50px;
+  animation: load 1.2s ease-in-out 0.2s infinite normal forwards;
+}
+@keyframes load {
+  0% {
+    margin-left: -50px;
+  }
+  100% {
+    margin-left: 160px;
+  }
+}

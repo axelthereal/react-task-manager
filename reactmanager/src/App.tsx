@@ -17,11 +17,12 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
+        <Route path="/" element={<HomeView />} />
         <Route path="/home" element={<HomeView />} />
         <Route path="/task/:id" element={<TaskView />} />
         <Route path="/add-task" element={<AddTaskView />} />
         <Route path="/edit-task/:id" element={<EditTaskView />} />
-      </Route> 
+      </Route>
     )
   );
   return <RouterProvider router={router} />;

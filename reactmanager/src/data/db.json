@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Clean the leaving room and the office",
+      "description": "Do some cleaning in the leaving room and my office since its the weekend.",
+      "state": "Pending",
+      "urgent": false
+    },
+    {
+      "id": "2",
+      "title": "Turn off cooker when food is ready",
+      "description": "Turn off the gas cooker when the diner is ready, don't forget to clean around to avoid dirts and bad odours",
+      "state": "Pending",
+      "urgent": true
+    },
+    {
+      "id": "3",
+      "title": "Change the house bulbs",
+      "description": "Change all the used bulbs in the main rooms and outside.",
+      "state": "Done",
+      "urgent": false
+    }
+  ]
+}
