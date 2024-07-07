@@ -20,6 +20,18 @@
       "description": "Change all the used bulbs in the main rooms and outside.",
       "state": "Done",
       "urgent": false
+    },
+    {
+      "id": "6ba6",
+      "title": "Code a main app",
+      "description": "code the app of the job boards",
+      "urgent": true
+    },
+    {
+      "id": "186f",
+      "title": "Learn ExpressJS & Typescript",
+      "description": "Finish my Mern lessons by learning expressjs and typescript for backend...",
+      "urgent": false
     }
   ]
 }

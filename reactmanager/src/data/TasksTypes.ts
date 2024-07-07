@@ -3,7 +3,7 @@ interface Task {
   title: string;
   description: string;
   state: string;
-  urgent: boolean | null;
+  urgent: boolean;
 }
 
 const taskObject: Task = {
@@ -11,7 +11,7 @@ const taskObject: Task = {
   title: "",
   description: "",
   state: "",
-  urgent: null,
+  urgent: false,
 };
 
 export { type Task, taskObject };
